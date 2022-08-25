@@ -1,0 +1,60 @@
+.header-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: hidden;
+  opacity: 0;
+  #header-job, #location {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 200;
+    line-height: 80%;
+    opacity: 1;
+    color: #000;
+  }
+  #lower-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    #header-name{
+      padding-bottom: 19px;
+      #name {
+        font-size: 10rem;
+        text-align: center;
+        font-family: "Saonara", serif;
+        font-weight: 100;
+        line-height: 100%;
+        letter-spacing: -5px;
+        margin: 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+        #span-1 {
+          color: #8E6E35;
+        }
+        #span-2 {
+          font-size: 18vw;
+        }
+      }
+    }
+    #header-arrow{
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+.data-scroll-container {
+  overflow-y: hidden;
+}
+
+.header-overlay {
+	grid-area: 1 / 1 / 2 / 2;
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 1vw 25px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navbar a:link {
+  text-decoration: none;
+}
+
+.navbar a {
+  position: relative;
+  color: #000;
+  padding-bottom: 6px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
+}
