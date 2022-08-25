@@ -3,9 +3,9 @@ import "./styles.scss";
 import gsap from "gsap";
 import images from "../../images/images";
 import { motion } from "framer-motion";
-import "locomotive-scroll/src/locomotive-scroll.scss";
 import useLocoScroll from "../../hooks/useLocoScroll";
 import { Link } from "gatsby";
+import CustomCursor from "../../CustomCursor";
 
 function Projects({src, index}) {
   const proj = gsap.timeline();
@@ -123,6 +123,7 @@ function Projects({src, index}) {
         </div>
       ) : (
     <div className="projects" ref={ref} data-scroll-container>
+      <CustomCursor/>
       <svg class="projects-overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
 			  <path class="projects-overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
 		  </svg>

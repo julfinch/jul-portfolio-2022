@@ -86,6 +86,10 @@ const Home = () => {
         >
           <Header/>
           <About />
+          <Gallery/>
+          <ViewSection/>
+          <Featured/>
+          <Footer/>
         </div>
       )}
     </>

@@ -4,7 +4,7 @@ import SplitText from "../../utils/Split3.min";
 import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 import "./style.scss"
-import image from "../../images/about-image.png"
+import image from "../../images/about-image.jpg"
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 
 export default function About() {
