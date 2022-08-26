@@ -1,9 +1,5 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CustomCursor from "../CustomCursor";
 import Header from "../components/Header";

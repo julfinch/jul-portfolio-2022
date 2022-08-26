@@ -5810,6 +5810,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.6.4":
+  version: 3.25.0
+  resolution: "core-js@npm:3.25.0"
+  checksum: 5a72740bf5babaf2e6203da4c0e831a0b97c3fe6f21b4c1aa8601d3a927660a22128dd8f0e86ce84778c4e5372ab0fc03c7944afa7e215c7fb13b2c79d5d5504
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
@@ -8531,6 +8538,7 @@ __metadata:
     react-icons: ^4.4.0
     react-loadable: ^5.5.0
     sass: ^1.54.0
+    smooth-scrollbar: ^8.7.5
   languageName: unknown
   linkType: soft
 
@@ -10720,6 +10728,13 @@ __metadata:
     smoothscroll-polyfill: ^0.4.4
     virtual-scroll: ^1.5.2
   checksum: 28ee6ca336dd8e72c7d97d9f8a551900f0535fc51a86b650034ec04acecc1e1554d1c5936f95cfd460a6571a9ee5af354bc3bd1a6c7aecd1b1063a4c8ab68eba
+  languageName: node
+  linkType: hard
+
+"lodash-es@npm:^4.17.21":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
   languageName: node
   linkType: hard
 
@@ -14270,6 +14285,17 @@ __metadata:
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
   checksum: b5167a7142c1da704c0e3af85c402002b597081dd9575031a90b4f229ca5678e9a36e8a374f1814c8156a725d17008ae3bde63b92f9cfd132526379e580bec8b
+  languageName: node
+  linkType: hard
+
+"smooth-scrollbar@npm:^8.7.5":
+  version: 8.7.5
+  resolution: "smooth-scrollbar@npm:8.7.5"
+  dependencies:
+    core-js: ^3.6.4
+    lodash-es: ^4.17.21
+    tslib: ^1.10.0
+  checksum: bc75a2ce9fc589627f9e7036ee24a0c67789b549a1d71d8843c9362b8d2d4b0e7fa14c8aebf341a4c7796252d859a2ef44f52172c141352f1feb7f97e0e72b21
   languageName: node
   linkType: hard
 

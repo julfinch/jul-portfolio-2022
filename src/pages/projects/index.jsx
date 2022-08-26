@@ -1,14 +1,16 @@
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect } from "react";
 import "./styles.scss";
 import gsap from "gsap";
 import images from "../../images/images";
 import { motion } from "framer-motion";
-import useLocoScroll from "../../hooks/useLocoScroll";
 import { Link } from "gatsby";
 import CustomCursor from "../../CustomCursor";
+import Scroll from "../../hooks/useSmoothScroll";
+
 
 function Projects({src, index}) {
   const proj = gsap.timeline();
+
   useEffect(() => {
     
     proj.set(".projects-overlay__path", {
@@ -53,47 +55,14 @@ function Projects({src, index}) {
         stagger: 0.05
     }, '>-=1.1');
   }, [proj])
-  
-  const ref = useRef(null);
-  const [preloader, setPreload] = useState(true);
 
-  useLocoScroll(!preloader);
-
-  useEffect(() => {
-    if (!preloader && ref) {
-      if (typeof window === "undefined" || !window.document) {
-        return;
-      }
-    }
-  }, [preloader]);
-
-  
-  const [timer, setTimer] = useState(3);
-  const id = useRef(null);
-  const clear = () => {
-    window.clearInterval(id.current);
-    setPreload(false);
-  };
-  
-  useEffect(() => {
-    id.current = window.setInterval(() => {
-      setTimer((time) => time - 1);
-    }, 100);
-    return () => clear();
-  }, []);
-
-  useEffect(() => {
-    if (timer === 0) {
-      clear();
-    }
-  }, [timer]);
-  
   //Open Link in New Tab
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
   }
 
+  //motion variants
   const list = {
     visible: {
       opacity: 1,
@@ -110,7 +79,6 @@ function Projects({src, index}) {
       },
     },
   }
-
   const child = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: -100 },
@@ -118,16 +86,13 @@ function Projects({src, index}) {
 
   return (
     <> 
-      {preloader ? (
-        <div className="loader-wrapper absolute">
-        </div>
-      ) : (
-    <div className="projects" ref={ref} data-scroll-container>
+    <div className="projects">
       <CustomCursor/>
+      <Scroll/>
       <svg class="projects-overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
 			  <path class="projects-overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
 		  </svg>
-      <section className="projects-hero disable-scrollbars">
+      <section className="projects-hero">
         <div className="hero-nav">
           <Link to="/">HOME</Link>
         </div>
@@ -162,9 +127,7 @@ function Projects({src, index}) {
             </motion.div>
           </>
         ))}
-
     </div>
-    )}
     </>
   );
 }

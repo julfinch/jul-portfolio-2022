@@ -35,12 +35,12 @@ export default function Footer() {
       type: "lines",
       linesClass: "lineChildren",
     });
-
+    /*
     const splitParent = new SplitText("#contacts-text",{
       type: "lines",
       linesClass: "lineParent",
     });
-
+    */
     gsap.to([".contacts", ".nav-footer"],{duration: 0, css: {visibility: 'visible'}})
     gsap.fromTo(split.lines, {y:200}, {
       duration: 3,

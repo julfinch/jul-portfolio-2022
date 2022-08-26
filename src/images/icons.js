@@ -1,4 +1,3 @@
-import React from 'react';
 import stack1 from './svg/html5.svg';
 import stack2 from './svg/css.svg';
 import stack3 from './svg/js.svg';

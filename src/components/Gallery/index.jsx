@@ -45,7 +45,7 @@ function GalleryItem({
     if (onScreen) {
       updateActiveImage(index);
     }
-  }, [onScreen, index]);
+  }, [onScreen, index, updateActiveImage]);
 
   return (
     <div
@@ -53,7 +53,6 @@ function GalleryItem({
       ref={ref}
     >
       
-      {/*{cn("gallery-item-wrapper", { "is-reveal": onScreen })} */}
       <div></div>
       <div className={"gallery-item"}>
         <div className="gallery-item-info">

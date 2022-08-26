@@ -38,7 +38,8 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
     "react-loadable": "^5.5.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "smooth-scrollbar": "^8.7.5"
   },
   "devDependencies": {
     "prettier": "^2.7.1"
