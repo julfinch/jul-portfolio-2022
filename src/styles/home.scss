@@ -5,7 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100;700&display=swap");
 
-//$bg-color: #f5f0ec;
 $bg-color: #EFE9D0;
 
 body {
@@ -39,6 +38,7 @@ section {
   right: 0;
   background-color: #000;
   z-index: 1;
+  overflow: hidden;
 }
 
 .loader-wrapper {
@@ -46,7 +46,7 @@ section {
   height: 100vh;
   color: #dbd8d6;
   z-index: 2;
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   .loader-bg {

@@ -8,6 +8,7 @@ export default function Featured() {
     <section className="featured-section" data-scroll-section>
       <div className="section-5" >
         <h2>Tech Stack</h2>
+        <span>To bring the idea to life, these are the techologies, skills, and tools that I heavily rely upon.</span>
         <div className="stack-container" >
         {icons.map((item, index) => (
           <>

@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
+import { SiGithub } from "react-icons/si";
+import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
+import { Link  } from "gatsby";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../../hooks/useOnScreen";
 import { motion } from "framer-motion";
-import image1 from "../../images/ip-tracker-react.png"
-import image2 from "../../images/admin-dashboard.png"
-import image3 from "../../images/socially-finch.png"
+import image1 from "../../images/ip-tracker-react.png";
+import image2 from "../../images/admin-dashboard.png";
+import image3 from "../../images/socially-finch.png";
 
 
 import "./style.scss";
@@ -16,26 +19,30 @@ const images = [
   {
     src: image1,
     title: "Find This IP",
-    category: "IP Address Tracker",
+    link: "https://find-this-ip.netlify.app/",
+    github: "https://github.com/julfinch/ip-tracker-react",
   },
   {
     src: image2,
     title: "FinchPro",
-    category: "Admin Dashboard",
+    link: "https://finch-dashboard.netlify.app/",
+    github: "https://github.com/julfinch/admin-dashboard-syncfusion",
   },
   {
     src: image3,
     title: "Socially",
-    category: "Mock website",
+    link: "https://socially-finch.netlify.app/",
+    github: "https://github.com/julfinch/socially",
   },
 ];
 
 function GalleryItem({
   src,
-  category,
   title,
   updateActiveImage,
   index,
+  link,
+  github
 }) {
   const ref = useRef(null);
 
@@ -55,14 +62,16 @@ function GalleryItem({
       
       <div></div>
       <div className={"gallery-item"}>
-        <div className="gallery-item-info">
-          <h1 className="gallery-info-title">{title}</h1>
-          <p className="gallery-info-category">{category}</p>
-        </div>
         <div
           className="gallery-item-image"
           style={{ backgroundImage: `url(${src})` }}
-        ></div>
+        >
+          <h1 className="gallery-info-title">{title}</h1>
+          <div className="gallery-icons">
+            <Link to={link} target="_blank" rel="noopener noreferrer" ><div><BsFillArrowUpRightCircleFill size={34} /></div></Link>
+            <Link to={github} target="_blank" rel="noopener noreferrer" ><div><SiGithub size={34} /></div></Link>
+          </div>
+        </div>
       </div>
       <div></div>
     </div>
@@ -83,7 +92,7 @@ export default function Gallery({ src, index, columnOffset }) {
       console.log({ current: ref.current });
       let sections = gsap.utils.toArray(".gallery-item-wrapper");
       
-        gsap.to(".gallery-title",{duration: 0, css: {visibility: 'visible'}})
+        gsap.to([".gallery-title",".gallery-counter"],{duration: 0, css: {visibility: 'visible'}})
         gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         delay: 0.1,

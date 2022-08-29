@@ -38,7 +38,7 @@ export default function About() {
       about.to(imageReveal, { duration: 1, cssRule: { width: "0%" }, ease: "power2.easeInOut" })
       about.from(img.current, { duration: 1, scale: 1.6, ease: "power2.easeInOut"})
   }
-  }, [reveal, about, imageReveal]);  
+  }, [reveal]);  
 
   return (
     <section className={cn("about-section")} data-scroll-section>

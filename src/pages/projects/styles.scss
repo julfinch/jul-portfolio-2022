@@ -33,8 +33,6 @@ h2 {
   overflow: hidden;
   background-color: #000;
   opacity: 0;
-  overscroll-behavior-y: none;
-  pointer-events: none;
   &:-webkit-scrollbar {
     display: none;
     scrollbar-width: thin;
@@ -70,10 +68,21 @@ h2 {
       }
       }
     }
-    .hero-content{
-      display: grid;
-      place-content: center;
+    #hero-content{
+      display: flex;
+      flex-direction: column;
       height: 100%;
+      &__text, &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      &__text {
+        height: 60%;
+      }
+      &__arrow {
+        height: 40%;
+      }
     }
   }
   .projects-item {

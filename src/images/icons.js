@@ -14,6 +14,8 @@ import stack13 from './svg/git.svg';
 import stack14 from './svg/gitlab.svg';
 import stack15 from './svg/redux.svg';
 import stack16 from './svg/vs.svg';
+import stack17 from './svg/firebase.svg';
+import stack18 from './svg/figma.svg';
 
 const icons = [
   {
@@ -70,7 +72,7 @@ const icons = [
   },
   {
     src: stack14,
-    title: "GitLab"
+    title: "Github"
   },
   {
     src: stack15,
@@ -79,6 +81,14 @@ const icons = [
   {
     src: stack16,
     title: "VS Code"
+  },
+  {
+    src: stack17,
+    title: "Firebase"
+  },
+  {
+    src: stack18,
+    title: "Figma"
   },
 ];
 
