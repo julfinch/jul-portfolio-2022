@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Link } from "gatsby";
 import CustomCursor from "../../CustomCursor";
 import Scroll from "../../hooks/useSmoothScroll";
-
+import ButtonHeader from "../../components/ButtonHeader";
 
 function Projects({src, index}) {
   const proj = gsap.timeline();
@@ -46,7 +46,7 @@ function Projects({src, index}) {
     })
     // menu items translate animation
     
-    proj.to(["#projects-hero-text",".hero-nav"], { 
+    proj.to(["#hero-content__text","#hero-content__arrow",".hero-nav"], { 
         duration: 2,
         ease: 'power4',
         startAt: {y: 190},
@@ -96,8 +96,9 @@ function Projects({src, index}) {
         <div className="hero-nav">
           <Link to="/">HOME</Link>
         </div>
-        <div className="hero-content">
-          <h2 id="projects-hero-text">PROJECTS</h2>
+        <div id="hero-content">
+          <div id="hero-content__text"><h2>PROJECTS</h2></div>
+          <div id="hero-content__arrow"><ButtonHeader/></div>
         </div>
       </section>
         {images.map((item, index) => (
@@ -114,8 +115,8 @@ function Projects({src, index}) {
               <motion.div variants={child} class="horizontal-line"><span>01</span><span>description</span></motion.div>
               <motion.h3 variants={child} className="projects-info-subtitle">{item.subtitle}</motion.h3>
               <motion.div variants={child} className="projects-links">
-                <a href={item.link}>Live Demo</a>
-                <a href={item.github}>Github</a>
+                <Link to={item.link} target="_blank" rel="noopener noreferrer" >Live Demo</Link>
+                <Link to={item.github} target="_blank" rel="noopener noreferrer" >Github</Link>
               </motion.div>
               <motion.div variants={child} class="horizontal-line"><span>02</span><span>stack</span></motion.div>
               <motion.div variants={child} className="projects-info-stack">{item.stack.map((icon) => 

@@ -69,7 +69,7 @@ export default function Footer() {
     <section className="footer" data-scroll-section>
             <div className="nav-footer">
               <Link to="/">HOME</Link>
-              <Link to="/projects">Projects</Link>
+              <Link></Link>
             </div>
         <div ref={ref} className={cn("contacts", {"is-reveal": reveal })} id="contacts-text">
           <h1 className="title-1">GET IN</h1>
