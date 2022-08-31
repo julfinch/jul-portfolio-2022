@@ -4,14 +4,16 @@
   position: relative;
   overflow-y: hidden;
   opacity: 0;
+  height: 100vh;
+  justify-content: center;
   #header-job, #location {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     text-align: center;
-    font-family: "Bodoni Moda", serif;
+    font-family: "Bisdak";
     font-weight: 200;
     line-height: 80%;
     opacity: 1;
-    color: #000;
+    color: #2D2B2C;
   }
   #lower-div{
     display: flex;
@@ -39,7 +41,7 @@
     }
     #header-arrow{
       text-align: center;
-      padding-top: 10px;
+      padding-top: 30px;
     }
   }
 }

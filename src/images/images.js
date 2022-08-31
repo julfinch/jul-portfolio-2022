@@ -5,6 +5,7 @@ import project2 from './admin-dashboard.png';
 import project3 from './shortly.png';
 import project4 from './socially-finch.png';
 import project5 from './data-protect.png';
+import project6 from './portfolio.png';
 
 const images = [
   {
@@ -76,11 +77,10 @@ const images = [
     ] 
   },
   {
-    src:
-      "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    src: project6,
     title: "Portfolio",
     subtitle:
-      "This website is a showcase portfolio that exhibits my web development skills where I layed out all information with regards to my journey in learning the React library. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used the extension language Sass. To achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.",
+      "This website is a showcase portfolio that exhibits my web development skills where I layed out all information with regards to my journey in learning the React library. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used the extension language - Sass. To achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.",
     link: "https://jul-lactao.netlify.app/",
     github: "https://github.com/julfinch/jul-portfolio-2022",
     stack: [

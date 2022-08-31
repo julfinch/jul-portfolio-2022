@@ -87,12 +87,11 @@
 }
 
 .nav-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px 0;
   letter-spacing: 1px;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   visibility: hidden;
 }
@@ -103,16 +102,18 @@
 
 .nav-footer a {
   position: relative;
-  color: #fff;
+  color: #8e6e35;
   line-height: 30px;
+  font-family: "Bisdak";
+  font-size: 13px;
   &:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     right: 0;
     height: 1px;
-    background: #fff;
+    background: #8e6e35;
     transform: scaleX(0);
     transition: transform 150ms ease-in-out;
   }

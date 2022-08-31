@@ -12,10 +12,10 @@ body {
 
 h2 {
   text-align: center;
-  font-family: "Bodoni Moda", serif;
+  font-family: "Saonara", serif;
   font-size: 11rem;
   margin: 0px auto;
-  color: #000;
+  color: #2D2B2C;
   @media (max-width: 480px) {
     font-size: 6rem;
   }
@@ -46,6 +46,7 @@ h2 {
       text-align: right;
       position: sticky;
       top: 0;
+      opacity: 0;
       a {
       position: relative;
       color: #000;
@@ -72,6 +73,7 @@ h2 {
       display: flex;
       flex-direction: column;
       height: 100%;
+      position: relative;
       &__text, &__arrow {
         display: flex;
         justify-content: center;
@@ -79,9 +81,47 @@ h2 {
       }
       &__text {
         height: 60%;
+        opacity: 0;
       }
       &__arrow {
         height: 40%;
+        opacity: 0;
+      }
+      img {
+        position: absolute;
+        transform-origin: center;
+      }
+      &__image1 {
+        width: 300px;
+        left: 16%;
+        bottom: 14%;
+        opacity: 0;
+      }
+      &__image2 {
+        width: 300px;
+        right: 4%;
+        top: 4%;
+        opacity: 0;
+      }
+      &__image3 {
+        max-width: 400px;
+        width: 40%;
+        right: 10%;
+        bottom: 4%;
+        opacity: 0;
+      }
+      &__image4 {
+        width: 400px;
+        left: 4%;
+        top: 12%;
+        opacity: 0;
+      }
+      &__image5 {
+        width: 600px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
       }
     }
   }
@@ -217,3 +257,4 @@ h2 {
   left: 0;
   right: 0;
 }
+

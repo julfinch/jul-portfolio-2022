@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./style.scss";
 import ButtonHeader from "../ButtonHeader";
-import Navbar from "../Navbar";
 
 export default function Header() {
     const navRef = useRef();
@@ -78,14 +77,14 @@ export default function Header() {
 			  <path class="header-overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
 		  </svg>
     <section className="header-container disable-scrollbars" data-scroll-section>
-      <Navbar ref={navRef}/>
+      {/* <Navbar ref={navRef}/> */}
       <h2 id="header-job">REACT  <span>DEVELOPER</span></h2>
 
       <div id="lower-div">
         <div id="header-name">
           <h1 id="name"><span id="span-1">JUL  DANREB</span> <span id="span-2" >LACTAO</span></h1>
         </div>
-        <h2 id="location">BASED IN MANDALUYONG, PH</h2>
+        <h2 id="location">CEBU / MANDALUYONG, PH</h2>
         <div id="header-arrow">
           <ButtonHeader/>
         </div>

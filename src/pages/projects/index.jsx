@@ -7,6 +7,11 @@ import { Link } from "gatsby";
 import CustomCursor from "../../CustomCursor";
 import Scroll from "../../hooks/useSmoothScroll";
 import ButtonHeader from "../../components/ButtonHeader";
+import image1 from "../../images/projects-admindashboard.png";
+import image2 from "../../images/projects-iptracker.png";
+import image3 from "../../images/projects-shortly.png";
+import image4 from "../../images/projects-socially.png";
+import image5 from "../../images/projects-dataprotect.png";
 
 function Projects({src, index}) {
   const proj = gsap.timeline();
@@ -44,16 +49,32 @@ function Projects({src, index}) {
         ease: 'power4',
         attr: { d: 'M 0 0 V 0 Q 50 0 100 0 V 0 z' }
     })
-    // menu items translate animation
-    
+    // images reveal animation
+    proj.to(["#hero-content__image1","#hero-content__image2","#hero-content__image3","#hero-content__image4","#hero-content__image5"], { 
+      duration: 1.6,
+      ease: 'power1.out',
+      startAt: {y: 200},
+      y: 0,
+      opacity: 1,
+      stagger: 0.35
+    });
+    // images exit animation
+    proj.to(["#hero-content__image1","#hero-content__image2","#hero-content__image3","#hero-content__image4","#hero-content__image5"], { 
+      duration: 1,
+      ease: 'none',
+      y: -200,
+      opacity: 0,
+      stagger: 0.15
+    });
+    //hero title and others reveal
     proj.to(["#hero-content__text","#hero-content__arrow",".hero-nav"], { 
         duration: 2,
-        ease: 'power4',
+        ease: 'power1.out',
         startAt: {y: 190},
         y: 0,
         opacity: 1,
-        stagger: 0.05
-    }, '>-=1.1');
+        stagger: 0.35
+    });
   }, [proj])
 
   //Open Link in New Tab
@@ -99,6 +120,12 @@ function Projects({src, index}) {
         <div id="hero-content">
           <div id="hero-content__text"><h2>PROJECTS</h2></div>
           <div id="hero-content__arrow"><ButtonHeader/></div>
+
+          <img id="hero-content__image1" src={image1} alt="hero project 1"/>
+          <img id="hero-content__image2" src={image2} alt="hero project 2"/>
+          <img id="hero-content__image3" src={image3} alt="hero project 3"/>
+          <img id="hero-content__image4" src={image4} alt="hero project 4"/>
+          <img id="hero-content__image5" src={image5} alt="hero project 5"/>
         </div>
       </section>
         {images.map((item, index) => (

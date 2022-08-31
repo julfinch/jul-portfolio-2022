@@ -10,7 +10,6 @@ import image1 from "../../images/ip-tracker-react.png";
 import image2 from "../../images/admin-dashboard.png";
 import image3 from "../../images/socially-finch.png";
 
-
 import "./style.scss";
 
 gsap.registerPlugin(ScrollTrigger)

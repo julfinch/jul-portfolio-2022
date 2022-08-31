@@ -1,3 +1,4 @@
+@font-face { font-family: Bisdak; src: url('../assets/fonts/Bisdak.otf');};
 @font-face { font-family: Coachella; font-weight: 100; src: url('../assets/fonts/Coachella Thin.otf');};
 @font-face { font-family: Coachella; font-weight: light; src: url('../assets/fonts/Coachella Bold.otf');};
 @font-face { font-family: Coachella; font-weight: regular; src: url('../assets/fonts/Coachella Regular.otf');};
@@ -72,13 +73,11 @@ section {
     width: 100%;
     visibility: hidden;
     h1 {
-      font-size: 70px;
-      text-transform: uppercase;
+      font-size: 100px;
       font-weight: 200;
-      color: #fff;
-      font-family: "Saonara", serif;
+      color: #8e6e35;
+      font-family: "Bodoni Moda", serif;
       display: inline-block;
-      line-height: 1em;
     }
   }
 }
