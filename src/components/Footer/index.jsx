@@ -68,8 +68,7 @@ export default function Footer() {
   return (
     <section className="footer" data-scroll-section>
             <div className="nav-footer">
-              <Link to="/">HOME</Link>
-              <Link></Link>
+              <Link to="/">JUL DANREB LACTAO</Link>
             </div>
         <div ref={ref} className={cn("contacts", {"is-reveal": reveal })} id="contacts-text">
           <h1 className="title-1">GET IN</h1>
@@ -95,7 +94,7 @@ export default function Footer() {
               <h3 className="socials-link"><Link to="https://www.linkedin.com/in/jul-danreb-lactao-b5b27027" target="_blank" rel="noopener noreferrer" >LINKEDIN</Link></h3>
               <h3 className="socials-link"><Link to="https://github.com/julfinch" target="_blank" rel="noopener noreferrer" >github</Link></h3>
             </div>
-            <h3 className="copyright">Jul Danreb Lactao © 2022</h3>
+            <h3 className="copyright">© 2022</h3>
         </div>
         <div className="footer-bar"></div>
     </section>
