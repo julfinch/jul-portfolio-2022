@@ -1,11 +1,11 @@
 import React from 'react';
 import { SiReact, SiVite, SiGatsby, SiSass, SiTailwindcss, SiMaterialui, SiNetlify } from 'react-icons/si';
-import project1 from './ip-tracker-react.png';
-import project2 from './admin-dashboard.png';
-import project3 from './shortly.png';
-import project4 from './socially-finch.png';
-import project5 from './data-protect.png';
-import project6 from './portfolio.png';
+import project1 from './projects-iptracker.png';
+import project2 from './projects-admindashboard.png';
+import project3 from './projects-shortly.png';
+import project4 from './projects-socially.png';
+import project5 from './projects-dataprotect.png';
+import project6 from './projects-portfolio.png';
 
 const images = [
   {
@@ -80,7 +80,7 @@ const images = [
     src: project6,
     title: "Portfolio",
     subtitle:
-      "This website is a showcase portfolio that exhibits my web development skills where I layed out all information with regards to my journey in learning the React library. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used the extension language - Sass. To achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.",
+      "This website is a showcase portfolio that exhibits my web development skills in using React. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used Sass and to achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.",
     link: "https://jul-lactao.netlify.app/",
     github: "https://github.com/julfinch/jul-portfolio-2022",
     stack: [

@@ -8,8 +8,15 @@ import Gallery from "../components/Gallery";
 import ViewSection from  "../components/ViewSection";
 import Featured from "../components/Featured";
 import useLocoScroll from "../hooks/useLocoScroll";
-
 import "../styles/home.scss";
+
+export const Head = () => (
+  <>
+    <meta charSet="utf-8" />
+    <title>Jul Danreb Lactao</title>
+    <meta name="description" content="Portfolio Website of Jul Danreb Lactao using React JS"/>
+  </>
+)
 
 const Home = () => {
   const ref = useRef(null);

@@ -68,7 +68,7 @@ export default function Footer() {
   return (
     <section className="footer" data-scroll-section>
             <div className="nav-footer">
-              <Link to="/">JUL DANREB LACTAO</Link>
+              <Link to="https://jul-lactao.netlify.app/">JUL DANREB LACTAO</Link>
             </div>
         <div ref={ref} className={cn("contacts", {"is-reveal": reveal })} id="contacts-text">
           <h1 className="title-1">GET IN</h1>
