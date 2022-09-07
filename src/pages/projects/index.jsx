@@ -13,6 +13,14 @@ import image3 from "../../images/projects-shortly.png";
 import image4 from "../../images/projects-socially.png";
 import image5 from "../../images/projects-dataprotect.png";
 
+export const Head = () => (
+  <>
+    <meta charSet="utf-8" />
+    <title>Jul Danreb Lactao</title>
+    <meta name="description" content="Portfolio Website of Jul Danreb Lactao using React JS"/>
+  </>
+)
+
 function Projects({src, index}) {
   const proj = gsap.timeline();
 
@@ -115,7 +123,7 @@ function Projects({src, index}) {
 		  </svg>
       <section className="projects-hero">
         <div className="hero-nav">
-          <Link to="/">HOME</Link>
+          <Link to="https://jul-lactao.netlify.app/">HOME</Link>
         </div>
         <div id="hero-content">
           <div id="hero-content__text"><h2>PROJECTS</h2></div>
