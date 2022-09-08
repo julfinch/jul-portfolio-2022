@@ -6,6 +6,10 @@
 
  module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Jul Danreb Lactao`,
+    description: `React Portfolio Website of Jul Danreb Lactao`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

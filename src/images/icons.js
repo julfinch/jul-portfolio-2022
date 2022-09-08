@@ -9,10 +9,10 @@ import stack8 from './svg/sass.svg';
 import stack9 from './svg/material-ui.svg';
 import stack10 from './svg/bootstrap5.svg';
 import stack11 from './svg/tailwind.svg';
-import stack12 from './svg/firebase.svg';
+import stack12 from './svg/netlify.svg';
 import stack13 from './svg/git.svg';
 import stack14 from './svg/gitlab.svg';
-import stack15 from './svg/redux.svg';
+import stack15 from './svg/vitejs.svg';
 import stack16 from './svg/vs.svg';
 import stack17 from './svg/firebase.svg';
 import stack18 from './svg/figma.svg';
@@ -64,7 +64,7 @@ const icons = [
   },
   {
     src: stack12,
-    title: "Firebase"
+    title: "Netlify"
   },
   {
     src: stack13,
@@ -76,7 +76,7 @@ const icons = [
   },
   {
     src: stack15,
-    title: "Redux"
+    title: "Vite"
   },
   {
     src: stack16,
