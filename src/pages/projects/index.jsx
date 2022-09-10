@@ -114,6 +114,10 @@ function Projects({src, index}) {
     hidden: { opacity: 0, y: -100 },
   }
 
+  if (typeof window === "undefined" || !window.document) {
+    return null;
+  }
+
   return (
     <> 
     <div className="projects">
