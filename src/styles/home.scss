@@ -51,8 +51,8 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
-      #section-header{
-        display: none;
+      #section-header {
+        display: block;
       }
       .section-0 {
         grid-template-columns: 1fr;
@@ -192,8 +192,8 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
-      #section-header{
-        display: none;
+      #section-header {
+        display: block;
       }
       .section-0 {
         grid-template-columns: 1fr;
