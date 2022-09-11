@@ -8,7 +8,6 @@ import Gallery from "../components/Gallery";
 import ViewSection from  "../components/ViewSection";
 import Featured from "../components/Featured";
 import useLocoScroll from "../hooks/useLocoScroll";
-import useWindowSize from "../hooks/useWindowSize";
 import "../styles/home.scss";
 
 export const Head = () => (
@@ -23,7 +22,6 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
   const home = gsap.timeline();
-  const size = useWindowSize();
 
   useEffect(() => {
     home.set(".intro", {duration: 0, visibility: 'visible'})
@@ -83,7 +81,7 @@ const Home = () => {
 
   return (
     <>
-      {size.width > 600 && <CustomCursor/>}
+      <CustomCursor/>
       {preloader ? (
         <div className="loader-wrapper absolute">
           <p className="loader-bg marquee1">Kumusta Ciao Hola Hi</p>
