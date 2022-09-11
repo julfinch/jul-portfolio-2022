@@ -51,6 +51,9 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
+      #section-header {
+        display: block;
+      }
       .section-0 {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -189,6 +192,9 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
+      #section-header {
+        display: block;
+      }
       .section-0 {
         grid-template-columns: 1fr;
         gap: 20px;
