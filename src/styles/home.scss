@@ -30,7 +30,7 @@ body {
   @include media("<=phone") {
     /*HEADER*/
     .header-container{
-      padding-top: 80px;
+      padding-top: 60px;
       #lower-div{
         #header-name{
           #name{
@@ -44,7 +44,7 @@ body {
           }
         }
         #header-arrow{
-          padding-top: 100px;
+          padding-top: 90px;
         }
       }
     }

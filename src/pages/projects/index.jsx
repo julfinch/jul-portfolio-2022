@@ -112,6 +112,7 @@ function Projects({src, index}) {
     hidden: { opacity: 0, y: -100 },
   }
 
+
   return (
     <> 
     <div className="projects">
