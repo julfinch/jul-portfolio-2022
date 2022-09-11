@@ -12,7 +12,6 @@ import image2 from "../../images/projects-iptracker.png";
 import image3 from "../../images/projects-shortly.png";
 import image4 from "../../images/projects-socially.png";
 import image5 from "../../images/projects-dataprotect.png";
-import useWindowSize from "../../hooks/useWindowSize";
 
 export const Head = () => (
   <>
@@ -23,7 +22,6 @@ export const Head = () => (
 )
 
 function Projects({src, index}) {
-  const size = useWindowSize();
   const proj = gsap.timeline();
   useEffect(() => {
     
@@ -114,16 +112,11 @@ function Projects({src, index}) {
     hidden: { opacity: 0, y: -100 },
   }
 
-  useEffect(() => {
-      if (typeof window === "undefined" || !window.document) {
-        return;
-      }
-  }, []);
 
   return (
     <> 
     <div className="projects">
-    {size.width > 600 && <CustomCursor/>}
+    <CustomCursor/>
       <Scroll/>
       <svg class="projects-overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
 			  <path class="projects-overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
