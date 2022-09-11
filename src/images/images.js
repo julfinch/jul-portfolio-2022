@@ -53,7 +53,7 @@ const images = [
     src: project4,
     title: "Socially",
     subtitle:
-      "Socially is a mock-up social media website that applies Material-UI, a library of React components that offers a comprehensive suite of UI tools which helped a lot in realizing this project.",
+      "Socially is a mock-up social media website that applies Material-UI, a library of React components that offers a comprehensive suite of UI tools which helped a lot in realizing this project. It is really a powerful tool and very enjoyable to use, it's no question that this easily became my favorite UI library yet. One doesn't need to be a designer to implement a visually stunning website.",
     link: "https://socially-finch.netlify.app/",
     github: "https://github.com/julfinch/socially",
     stack: [

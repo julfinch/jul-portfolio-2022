@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.scss";
 import ButtonProjects from "../ButtonProjects";
 import { FiArrowUpRight } from "react-icons/fi";
 import { SiReact } from "react-icons/si";
+import { gsap } from "gsap";
 
 export default function ViewSection({icons}) {
+
+  useEffect(() => {
+    setTimeout(() => {
+      gsap.to(".section-2-button",{duration: 0, css: {visibility: 'visible'}})
+    });
+  }, []);
+
+
   return (
-    <section className="view-section" data-scroll-section>
-      <div className="section-2" data-scroll data-scroll-speed="1" >
+    <div className="view-section" data-scroll-section>
         <div className="section-2-button">
           <ButtonProjects/>
         </div>
+      <div className="section-2" data-scroll  >
+        
             <h1 
                 data-scroll 
                 data-scroll-direction="horizontal" 
@@ -34,6 +44,6 @@ export default function ViewSection({icons}) {
             </h1>
         </div>
       
-    </section>
+    </div>
   );
 }

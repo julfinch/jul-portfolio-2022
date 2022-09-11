@@ -12,6 +12,7 @@ import image2 from "../../images/projects-iptracker.png";
 import image3 from "../../images/projects-shortly.png";
 import image4 from "../../images/projects-socially.png";
 import image5 from "../../images/projects-dataprotect.png";
+import useWindowSize from "../../hooks/useWindowSize";
 
 export const Head = () => (
   <>
@@ -23,7 +24,7 @@ export const Head = () => (
 
 function Projects({src, index}) {
   const proj = gsap.timeline();
-
+  const size = useWindowSize();
   useEffect(() => {
     
     proj.set(".projects-overlay__path", {
@@ -113,17 +114,21 @@ function Projects({src, index}) {
     hidden: { opacity: 0, y: -100 },
   }
 
+  if (typeof window === "undefined" || !window.document) {
+    return null;
+  }
+
   return (
     <> 
     <div className="projects">
-      <CustomCursor/>
+    {size.width > 600 && <CustomCursor/>}
       <Scroll/>
       <svg class="projects-overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
 			  <path class="projects-overlay__path" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
 		  </svg>
       <section className="projects-hero">
         <div className="hero-nav">
-          <Link to="https://jul-lactao.netlify.app/">HOME</Link>
+          <Link to="https://jul-lactao.netlify.app/">JUL DANREB LACTAO</Link>
         </div>
         <div id="hero-content">
           <div id="hero-content__text"><h2>PROJECTS</h2></div>
