@@ -84,7 +84,7 @@ const Home = () => {
 
   return (
     <>
-      {size.width > 600 && <CustomCursor/>}
+      { typeof window !== 'undefined' ? size.width > 600 && <CustomCursor/> : null}
       {preloader ? (
         <div className="loader-wrapper absolute">
           <p className="loader-bg marquee1">Kumusta Ciao Hola Hi</p>
