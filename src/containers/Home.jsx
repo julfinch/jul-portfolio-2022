@@ -5,6 +5,7 @@ import CustomCursor from "../CustomCursor";
 import Header from "../components/Header";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
+import GalleryMobile from "../components/GalleryMobile";
 import ViewSection from  "../components/ViewSection";
 import Featured from "../components/Featured";
 import useLocoScroll from "../hooks/useLocoScroll";
