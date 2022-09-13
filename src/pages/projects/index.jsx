@@ -12,7 +12,6 @@ import image2 from "../../images/projects-iptracker.png";
 import image3 from "../../images/projects-shortly.png";
 import image4 from "../../images/projects-socially.png";
 import image5 from "../../images/projects-dataprotect.png";
-import useWindowSize from "../../hooks/useWindowSize";
 
 export const Head = () => (
   <>
@@ -114,11 +113,6 @@ function Projects({src, index}) {
     hidden: { opacity: 0, y: -100 },
   }
 
-  useEffect(() => {
-      if (typeof window === "undefined" || !window.document) {
-        return;
-      }
-  }, []);
 
   return (
     <> 

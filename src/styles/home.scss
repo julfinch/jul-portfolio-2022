@@ -30,7 +30,7 @@ body {
   @include media("<=phone") {
     /*HEADER*/
     .header-container{
-      padding-top: 80px;
+      padding-top: 60px;
       #lower-div{
         #header-name{
           #name{
@@ -44,13 +44,16 @@ body {
           }
         }
         #header-arrow{
-          padding-top: 100px;
+          padding-top: 90px;
         }
       }
     }
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
+      #section-header {
+        display: block;
+      }
       .section-0 {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -168,7 +171,7 @@ body {
   @include media(">phone", "<=425px") {
     /*HEADER*/
     .header-container{
-      padding-top: 80px;
+      padding-top: 60px;
       #lower-div{
         #header-name{
           #name{
@@ -182,15 +185,15 @@ body {
           }
         }
         #header-arrow{
-          padding-top: 100px;
+          padding-top: 90px;
         }
       }
     }
     /*ABOUT*/
     .about-section {
       margin-bottom: 5vh;
-      #section-header{
-        display: none;
+      #section-header {
+        display: block;
       }
       .section-0 {
         grid-template-columns: 1fr;
@@ -306,7 +309,7 @@ body {
       }
     }
   }
-  @include media(">=tablet", "<desktop") {
+  @include media(">=tablet", "<1024px") {
     /*HEADER*/
     .header-container{
       padding-top: 40px;
@@ -424,6 +427,88 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  @include media(">=1024px", "<desktop") {
+    /*HEADER*/
+    .header-container{
+      #lower-div{
+        #header-name{
+          #name{
+            line-height: 100%;
+            #span-2{
+              font-size: 23vw;
+            }
+          }
+        }
+        #header-arrow{
+          padding-top: 40px;
+        }
+      }
+    }
+    /*ABOUT*/
+    /*GALLERY*/
+    .gallery {
+      .gallery-item-image {
+        margin-top: -10px;
+        width: 130%;
+        height: 91%;
+      }
+    }
+    /*VIEW SECTION*/
+    .view-section{
+      .section-2{
+        h1{
+          font-size: 10vw;
+        }
+      }
+      .section-2-button{
+        .button-projects{
+          .button-1{
+            width: 30vh;
+            height: 30vh;
+          }
+          .button--calypso{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    /*TECH STACK*/
+    .featured-section{
+      .section-5{
+        h2{
+          margin: 20px 0px 10px;
+        }
+        span{
+          margin-bottom: 40px;
+        }
+        .stack-container{
+          .stack{
+            .stack-image{
+              img {
+                width: 140px;
+                height: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+    /*FOOTER*/
+    .footer{
+      .contacts{
+        margin-top: 50px;
+        .title-1, .title-2{
+          font-size: 11vw;
+        }
+        .button-wrapper{
+          height: 80px;
+        }
+      }
+      .contacts-info{
+        margin-top: 70px;
       }
     }
   }
