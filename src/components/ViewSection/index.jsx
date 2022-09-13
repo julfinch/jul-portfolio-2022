@@ -4,6 +4,7 @@ import ButtonProjects from "../ButtonProjects";
 import { FiArrowUpRight } from "react-icons/fi";
 import { SiReact } from "react-icons/si";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 
 export default function ViewSection({icons}) {
 
@@ -16,9 +17,9 @@ export default function ViewSection({icons}) {
 
   return (
     <div className="view-section" data-scroll-section>
-        <div className="section-2-button">
+        <motion.div className="section-2-button" initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { type: "easeOut", duration: 0.5} }} viewport={{ once: true }}>
           <ButtonProjects/>
-        </div>
+        </motion.div>
       <div className="section-2" data-scroll  >
         
             <h1 

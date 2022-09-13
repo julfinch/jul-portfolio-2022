@@ -51,6 +51,12 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 2vh;
+      #section-header{
+        margin: 30vh 0 30vh;
+        p {
+            font-size: 5.1vw;
+        }
+      }
       .section-0 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -210,6 +216,12 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 2vh;
+      #section-header{
+        margin: 30vh 0 30vh;
+        p {
+            font-size: 5.1vw;
+        }
+      }
       .section-0 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -369,6 +381,11 @@ body {
     /*ABOUT*/
     .about-section {
       margin-bottom: 2vh;
+      #section-header{
+        p {
+            font-size: 4.5vw;
+        }
+      }
       .section-0 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
