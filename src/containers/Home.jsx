@@ -106,7 +106,7 @@ const Home = () => {
         >
           <Header/>
           <About />
-          <Gallery/>
+          {width > 1024 ? <Gallery/> : <GalleryMobile/>}
           <ViewSection/>
           <Featured/>
           <Footer/>
