@@ -6,6 +6,7 @@ import cn from "classnames";
 import "./style.scss"
 import image from "../../images/about-image.jpg"
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { motion } from "framer-motion";
 
 export default function About() {
   gsap.registerPlugin(CSSRulePlugin);
@@ -42,21 +43,23 @@ export default function About() {
 
   return (
     <section className={cn("about-section")} data-scroll-section>
-      <div id="section-header" data-scroll data-scroll-speed="1" >
-            <p 
+        <div id="section-header" data-scroll data-scroll-speed="1" >
+            <motion.p 
                 data-scroll 
                 data-scroll-direction="horizontal" 
                 data-scroll-speed="-2"
+                 initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { type: "easeOut", duration: 1.5} }} viewport={{ once: true }}
             >
                 It all started when I was messing 
-            </p>
-            <p 
+            </motion.p>
+            <motion.p 
                 data-scroll 
                 data-scroll-direction="horizontal" 
                 data-scroll-speed="2"
+                 initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }}
             >
                 around with my codes back in 2005...
-            </p>
+            </motion.p>
         </div>
       
       <div className="section-0">
