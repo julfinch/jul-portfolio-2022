@@ -69,7 +69,7 @@ export default function Header() {
         delay: 0.5,
         ease: 'power1.out',
       }, '>-=1.1')
-    }, [headerTL]);
+    }, []);
     
   return (
     <>
