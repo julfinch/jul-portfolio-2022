@@ -173,7 +173,7 @@ body {
         }
       }
       .contacts-info{
-        margin-top: 50px;
+        margin-top: 70px;
         font-size: 12px;
         padding: 0 13px;
         .socials{
@@ -756,6 +756,18 @@ section {
     .loader-bg {
       line-height: 180px;
       font-size: 60px;
+      letter-spacing: -6px;
+    }
+    .intro {
+      h1 {
+        font-size: 45px;
+      }
+    }
+  }
+  @include media(">425px", "<tablet") {
+    .loader-bg {
+      line-height: 200px;
+      font-size: 80px;
       letter-spacing: -6px;
     }
     .intro {
