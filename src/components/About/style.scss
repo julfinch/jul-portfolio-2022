@@ -25,7 +25,7 @@
     .about-text{
       margin-top: 3rem;
       #headline {
-        font-size: 24px;
+        font-size: clamp(17px, 2vw, 24px);
         line-height: 1.12;
         opacity: 0;
         text-align: justify;
@@ -63,7 +63,7 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: #fff;
+    background: #EFE9D0;
   }
   img {
     width: 100%;

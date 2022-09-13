@@ -5,6 +5,10 @@
   background-color: #E3DACD;
   .section-5 {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
     h2 {
       font-family: "Saonara", serif;
       font-size: 7rem;
@@ -25,6 +29,7 @@
       flex-wrap: wrap;
       gap: 0.3rem;
       justify-content: space-evenly;
+      flex-basis: 80%;
       .stack {
         display: flex;
         flex-direction: column;
