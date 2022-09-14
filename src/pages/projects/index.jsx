@@ -84,7 +84,7 @@ function Projects({src, index}) {
         opacity: 1,
         stagger: 0.35
     });
-  }, [proj])
+  }, [])
 
   //Open Link in New Tab
   const openInNewTab = (url) => {
