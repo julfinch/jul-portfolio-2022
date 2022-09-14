@@ -50,7 +50,7 @@ body {
     }
     /*ABOUT*/
     .about-section {
-      margin-bottom: 2vh;
+      margin-bottom: 0vh;
       #section-header{
         margin: 30vh 0 30vh;
         p {
@@ -60,6 +60,24 @@ body {
       .section-0 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        gap: 0rem;
+        .about-text,
+        .about-image {
+          margin-bottom: -60px;
+        }
+        .about-text{
+          #headline{
+            span {
+            font-weight: 200;
+        }
+          }
+        }
+      }
+    }
+    .about-image {
+      margin-bottom: -90px;
+      &:after {
+        display: none;
       }
     }
     /* GALLERY MOBILE */
