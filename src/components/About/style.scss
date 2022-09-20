@@ -49,8 +49,8 @@
 }
 
 .about-image {
-  width: 100%;
-  height: 100%;
+  width: 598.7px;
+  height: 397.483px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -59,14 +59,14 @@
   &:after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 598.7px;
+    height: 397.483px;
     top: 0;
     right: 0;
     background: #EFE9D0;
   }
   img {
-    width: 100%;
+    width: 598.7px;
     position: absolute;
   }
 }
