@@ -36,8 +36,8 @@ export default function About() {
       stagger: 0.1,
       ease: "power2",
       })
-      about.to(imageReveal, { duration: 1, cssRule: { width: "0%" }, ease: "power2.easeInOut" })
-      about.from(img.current, { duration: 1, scale: 1.6, ease: "power2.easeInOut"})
+      about.to(imageReveal, { duration: 1.4, cssRule: { width: "0%" }, ease: "power2.easeInOut" })
+      about.from(img.current, { duration: 1.4, delay: -1.6, scale: 1.6, opacity: 0, ease: "power2.easeInOut"})
   }
   }, [reveal]);  
 

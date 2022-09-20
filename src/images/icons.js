@@ -16,6 +16,8 @@ import stack15 from './svg/vitejs.svg';
 import stack16 from './svg/vs.svg';
 import stack17 from './svg/firebase.svg';
 import stack18 from './svg/figma.svg';
+import stack19 from './svg/redux.svg';
+import stack20 from './svg/npm.svg';
 
 const icons = [
   {
@@ -89,6 +91,14 @@ const icons = [
   {
     src: stack18,
     title: "Figma"
+  },
+  {
+    src: stack19,
+    title: "Redux Toolkit"
+  },
+  {
+    src: stack20,
+    title: "NPM"
   },
 ];
 
