@@ -5,6 +5,9 @@ import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 import "./style.scss"
 import image from "../../images/about-image.jpg"
+import image1 from "../../images/friendster.png"
+import image2 from "../../images/multiply.png"
+import image3 from "../../images/blogger.png"
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 import { motion } from "framer-motion";
 
@@ -38,6 +41,25 @@ export default function About() {
       })
       about.to(imageReveal, { duration: 1.4, cssRule: { width: "0%" }, ease: "power2.easeInOut" })
       about.from(img.current, { duration: 1.4, delay: -1.6, scale: 1.6, opacity: 0, ease: "power2.easeInOut"})
+      about.from(".friendster", {
+        duration: 1,
+        delay: 1,
+        y: -100,
+        opacity: 0,
+        ease: "power2.easeInOut",
+      })
+      about.from(".multiply", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "power2.easeInOut",
+      })
+      about.from(".blogger", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "power2.easeInOut",
+      })
   }
   }, [reveal]);  
 
@@ -76,6 +98,9 @@ export default function About() {
         <div className="about-image" ref={aboutImage}>
           <img ref={img} src={image} alt="laptop with friendster.com"/>
         </div>
+          <img data-scroll data-scroll-speed="1" className="friendster" src={image1} alt="friendster logo"/>
+          <img data-scroll data-scroll-speed="3" className="multiply" src={image2} alt="multiply log"/>
+          <img data-scroll data-scroll-speed="2" className="blogger" src={image3} alt="blogger logo"/>
       </div>
       
     </section>
