@@ -17,6 +17,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     visibility: hidden;
+    position: relative;
     gap: 2rem;
     .about-text,
     .about-image {
@@ -45,17 +46,35 @@
         }
       }
     }
+    .friendster{
+      position: absolute;
+      top: -15%;
+      right: -5%;
+      width: 20%;
+    }
+    .multiply{
+      position: absolute;
+      bottom: -1%;
+      right: 6%;
+      width: 25%;
+    }
+    .blogger{
+      position: absolute;
+      bottom: 29%;
+      right: 28%;
+      width: 25%;
+    }
   }
 }
 
 .about-image {
   width: 620px;
   height: 457px;
-  position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   &:after {
     content: "";
     position: absolute;

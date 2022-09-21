@@ -71,8 +71,11 @@ body {
             font-size: 15px;
             span {
             font-weight: 200;
-        }
+            }
           }
+        }
+        .multiply, .blogger, .friendster{
+          display: none;
         }
       }
     }
@@ -80,6 +83,7 @@ body {
       margin-bottom: -90px;
       width: 100%;
       height: 100%;
+      background-position-x: relative;
       &:after {
         display: none;
       }
@@ -256,6 +260,9 @@ body {
             letter-spacing: -0.3px;
             font-size: 15px;
           }
+        }
+        .multiply, .blogger, .friendster{
+          display: none;
         }
       }
     }
@@ -443,6 +450,9 @@ body {
         width: 100%;
       }
     }
+    .multiply, .blogger, .friendster{
+          display: none;
+        }
     /* GALLERY MOBILE */
     .gallery-mobile {
       .gallery-mobile-items{
@@ -605,6 +615,9 @@ body {
       img {
         width: 100%;
       }
+    }
+    .multiply, .blogger, .friendster{
+      display: none;
     }
     /*GALLERY*/
     /*VIEW SECTION*/
