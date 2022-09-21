@@ -98,9 +98,15 @@ export default function About() {
         <div className="about-image" ref={aboutImage}>
           <img ref={img} src={image} alt="laptop with friendster.com"/>
         </div>
+<<<<<<< HEAD
           <img data-scroll data-scroll-speed="1" className="friendster" src={image1} alt="friendster logo"/>
           <img data-scroll data-scroll-speed="3" className="multiply" src={image2} alt="multiply log"/>
           <img data-scroll data-scroll-speed="2" className="blogger" src={image3} alt="blogger logo"/>
+=======
+          <img data-scroll data-scroll-speed="1" className="friendster" src={friendster} alt="friendster logo"/>
+          <img data-scroll data-scroll-speed="3" className="multiply" src={multiply} alt="multiply log"/>
+          <img data-scroll data-scroll-speed="2" className="blogger" src={blogger} alt="blogger logo"/>
+>>>>>>> 0a49975b53dca3c38c56ffcbf86e9c41e0e5ef38
       </div>
       
     </section>
