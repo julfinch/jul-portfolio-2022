@@ -1,19 +1,31 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Jul Danreb Lactao Portfolio Website
+  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+  -This website is a showcase portfolio that exhibits my web development skills in using React. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used Sass and to achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.
+  
+## Table of contents
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#process)
+  - [Install Dependencies](#dependencies)
+  - [Additional Info](#additional-info)
+  - [Errors](#errors)
+  - [Built With](#built-with)
+- [Author](#author)
 
-## 🚀 Quick start
+## Overview
 
+### Screenshot
+
+![](./_readme_img/portfolio.png)
+
+### Links
+
+  -Live Site URL: [https://jul-lactao.netlify.app/](https://jul-lactao.netlify.app/)
+
+## My Process
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the hello-world starter.
@@ -40,66 +52,112 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🚀 Quick start (Gatsby Cloud)
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+### Install Dependencies
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+```js
+"dependencies": {
+    "classnames": "^2.3.1",
+    "eslint": "^8.20.0",
+    "framer-motion": "^6.5.1",
+    "gatsby": "^4.19.2",
+    "gatsby-plugin-gatsby-cloud": "^4.19.0",
+    "gatsby-plugin-image": "^2.19.0",
+    "gatsby-plugin-less": "^6.19.0",
+    "gatsby-plugin-manifest": "^4.19.0",
+    "gatsby-plugin-offline": "^5.19.0",
+    "gatsby-plugin-react-helmet": "^5.19.0",
+    "gatsby-plugin-sass": "^5.19.0",
+    "gatsby-plugin-sharp": "^4.19.0",
+    "gatsby-source-filesystem": "^4.19.0",
+    "gatsby-transformer-sharp": "^4.19.0",
+    "gsap": "^3.10.4",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "locomotive-scroll": "^4.1.4",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0",
+    "react-loadable": "^5.5.0",
+    "sass": "^1.54.0",
+    "sharp": "0.30.7",
+    "smooth-scrollbar": "^8.7.5"
+  },
+```
 
-## 🧐 What's inside?
+### Additional Info
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+**GATSBY-CONFIG.JS**
+```js
+	module.exports = {
+  /* Your site config here */
+  siteMetadata: {
+    title: `Jul Danreb Lactao`,
+    description: `React Portfolio Website of Jul Danreb Lactao`,
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+    resolve: "gatsby-plugin-less",
+    options: {
+      javascriptEnabled: true,
+    },
+  },
+    `gatsby-plugin-less`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-less`,
+      options: {
+        loaderOptions: {
+          appendData: `@env: ${process.env.NODE_ENV};`,
+        },
+        javascriptEnabled: true,
+        modifyVars: {
+          "primary-color": "#00BFA6",
+        },
+      },
+    },
+  ],
+}
+```
+---
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### Errors
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+- ** [remote rejected] main -> main (shallow update not allowed) error: failed to push some refs t**
+![](./_readme_img/prob_a.png)
+![](./_readme_img/prob_b.png)
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+- **Removing Gastby-Starter as old repo then adding my own portfolio-2022 repo as new **
+![](./_readme_img/prob_c.png)
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+- **Continuos development: creating new branch**
+![](./_readme_img/github_continuos_dev.png)
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+---
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+### Built with
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+- Semantic HTML5 markup
+- SASS
+- ReactJS
+- Gatsby
+- GSAP
+- Framer Motion
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+---
+ 
+## Author
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+- Twitter - [@julfinch](https://www.twitter.com/julfinch)

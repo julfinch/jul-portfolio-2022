@@ -5,7 +5,7 @@ import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 import "./style.scss"
 import image from "../../images/about-image.jpg"
-import image1 from "../../images/friendster.png"
+import image1 from "../../images/friends.png"
 import image2 from "../../images/multiply.png"
 import image3 from "../../images/blogger.png"
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
