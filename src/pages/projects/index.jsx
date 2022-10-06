@@ -11,7 +11,7 @@ import image1 from "../../images/projects-admindashboard.png";
 import image2 from "../../images/projects-iptracker.png";
 import image3 from "../../images/projects-shortly.png";
 import image4 from "../../images/projects-socially.png";
-import image5 from "../../images/projects-dataprotect.png";
+import image5 from "../../images/projects-neublock.png";
 import useWindowSize from "../../hooks/useWindowSize";
 
 export const Head = () => (

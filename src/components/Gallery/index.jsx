@@ -19,19 +19,19 @@ const images = [
     src: image1,
     title: "Find This IP",
     link: "https://find-this-ip.netlify.app/",
-    github: "https://github.com/julfinch/ip-tracker-react",
+    github: "https://github.com/",
   },
   {
     src: image2,
     title: "FinchPro",
     link: "https://finch-dashboard.netlify.app/",
-    github: "https://github.com/julfinch/admin-dashboard-syncfusion",
+    github: "https://github.com/",
   },
   {
     src: image3,
     title: "Socially",
     link: "https://socially-finch.netlify.app/",
-    github: "https://github.com/julfinch/socially",
+    github: "https://github.com/",
   },
 ];
 
