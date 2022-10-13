@@ -1,5 +1,6 @@
 import React from 'react';
-import { SiReact, SiVite, SiGatsby, SiSass, SiTailwindcss, SiMaterialui, SiNetlify } from 'react-icons/si';
+import { SiReact, SiVite, SiGatsby, SiSass, SiTailwindcss, SiStyledcomponents, SiMaterialui, SiNetlify, SiRedux, SiGreensock } from 'react-icons/si';
+import { AiFillApi } from 'react-icons/ai';
 import project1 from './projects-iptracker.png';
 import project2 from './projects-admindashboard.png';
 import project3 from './projects-shortly.png';
@@ -17,8 +18,8 @@ const images = [
     github: "https://github.com/julfinch/crypto-finch",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
-      { icon: <SiVite  size={24} />, icon_name: "Vite"  },
-      { icon: <SiNetlify  size={24} />, icon_name: "Netlify"  },
+      { icon: <AiFillApi  size={24} />, icon_name: "API"  },
+      { icon: <SiRedux  size={24} />, icon_name: "Redux TK"  },
     ] 
   },
   {
@@ -32,7 +33,7 @@ const images = [
       { icon: <SiReact  size={24} />, icon_name: "React" },
       { icon: <SiVite  size={24} />, icon_name: "Vite"  },
       { icon: <SiTailwindcss  size={24} />, icon_name: "Tailwind"  },
-      { icon: <SiNetlify  size={24} />, icon_name: "Netlify"  },
+      { icon: <AiFillApi  size={24} />, icon_name: "API"  },
     ] 
   },
   {
@@ -59,7 +60,7 @@ const images = [
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
       { icon: <SiVite  size={24} />, icon_name: "Vite"  },
-      { icon: <SiNetlify  size={24} />, icon_name: "Netlify"  },
+      { icon: <AiFillApi  size={24} />, icon_name: "API"  },
     ] 
   },
   {
@@ -73,7 +74,7 @@ const images = [
       { icon: <SiReact  size={24} />, icon_name: "React" },
       { icon: <SiVite  size={24} />, icon_name: "Vite"  },
       { icon: <SiMaterialui  size={24} />, icon_name: "MUI-5" },
-      { icon: <SiNetlify  size={24} />, icon_name: "Netlify"  },
+      { icon: <SiStyledcomponents  size={24} />, icon_name: "Styled"  },
     ] 
   },
   {
@@ -87,7 +88,7 @@ const images = [
       { icon: <SiReact  size={24} />, icon_name: "React" },
       { icon: <SiGatsby  size={24} />, icon_name: "Gatsby"  },
       { icon: <SiSass   size={24} />, icon_name: "Sass"  },
-      { icon: <SiNetlify  size={24} />, icon_name: "Netlify"  },
+      { icon: <SiGreensock  size={24} />, icon_name: "GSAP"  },
     ] 
   }
 ];
