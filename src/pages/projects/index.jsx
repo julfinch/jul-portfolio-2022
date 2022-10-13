@@ -125,7 +125,7 @@ function Projects({src, index}) {
 		  </svg>
       <section className="projects-hero">
         <div className="hero-nav">
-          <Link to="https://jul-lactao.netlify.app/">JUL DANREB LACTAO</Link>
+          <Link to="/">JUL DANREB LACTAO</Link>
         </div>
         <div id="hero-content">
           <div id="hero-content__text"><h2>PROJECTS</h2></div>
