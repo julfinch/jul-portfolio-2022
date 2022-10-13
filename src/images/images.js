@@ -19,7 +19,7 @@ const images = [
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
       { icon: <AiFillApi  size={24} />, icon_name: "API"  },
-      { icon: <SiRedux  size={24} />, icon_name: "Redux TK"  },
+      { icon: <SiRedux  size={24} />, icon_name: "Redux Toolkit"  },
     ] 
   },
   {
