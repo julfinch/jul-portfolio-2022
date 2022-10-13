@@ -19,19 +19,19 @@ const images = [
     src: image1,
     title: "Find This IP",
     link: "https://find-this-ip.vercel.app/",
-    github: "https://github.com/",
+    github: "https://github.com/julfinch/ip-tracker-react",
   },
   {
     src: image2,
     title: "FinchPro",
     link: "https://finch-dashboard.vercel.app/",
-    github: "https://github.com/",
+    github: "https://github.com/julfinch/admin-dashboard-syncfusion",
   },
   {
     src: image3,
     title: "Socially",
     link: "https://socially-finch.vercel.app/",
-    github: "https://github.com/",
+    github: "https://github.com/julfinch/socially",
   },
 ];
 
