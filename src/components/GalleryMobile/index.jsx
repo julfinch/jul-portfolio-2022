@@ -46,7 +46,7 @@ export default function GalleryMobile() {
             <motion.img src={image1} alt="Find This IP" initial={{ scale: 0.6 }} whileInView={{ scale: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }} />
             <motion.h1 initial={{ x: 300, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }} className="gallery-mobile-title">Find This IP</motion.h1>
             <motion.div className="gallery-mobile-icons" initial="hidden" whileInView="visible" variants={list} viewport={{ once: true }}>
-              <Link to="https://find-this-ip.netlify.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
+              <Link to="https://find-this-ip.vercel.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
               <Link to="https://github.com/julfinch/ip-tracker-react" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><SiGithub size={34} /></motion.div></Link>
             </motion.div>
           </div>
@@ -57,7 +57,7 @@ export default function GalleryMobile() {
             <motion.img src={image2} alt="FinchPro" initial={{ scale: 0.6 }} whileInView={{ scale: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }}  />
             <motion.h1 className="gallery-mobile-title" initial={{ x: -300, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }}>FinchPro</motion.h1>
             <motion.div className="gallery-mobile-icons" initial="hidden" whileInView="visible" variants={list} viewport={{ once: true }}>
-              <Link to="https://finch-dashboard.netlify.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
+              <Link to="https://finch-dashboard.vercel.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
               <Link to="https://github.com/julfinch/admin-dashboard-syncfusion" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><SiGithub size={34} /></motion.div></Link>
             </motion.div>
           </div>
@@ -68,7 +68,7 @@ export default function GalleryMobile() {
             <motion.img src={image3} alt="Socially" initial={{ scale: 0.6 }} whileInView={{ scale: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }}  />
             <motion.h1 className="gallery-mobile-title" initial={{ x: 300, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { type: "easeOut", duration: 1} }} viewport={{ once: true }}>Socially</motion.h1>
             <motion.div className="gallery-mobile-icons" initial="hidden" whileInView="visible" variants={list} viewport={{ once: true }}>
-              <Link to="https://socially-finch.netlify.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
+              <Link to="https://socially-finch.vercel.app/" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><BsFillArrowUpRightCircleFill size={34} /></motion.div></Link>
               <Link to="https://github.com/julfinch/socially" target="_blank" rel="noopener noreferrer" ><motion.div variants={child}><SiGithub size={34} /></motion.div></Link>
             </motion.div>
           </div>

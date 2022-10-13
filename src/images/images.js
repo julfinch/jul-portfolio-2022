@@ -13,7 +13,7 @@ const images = [
     title: "NeuBlock",
     subtitle:
       "NeuBlock is a Charting and NFT-Crypto Tracker app that was accomplished using Redux Toolkit and Ant Design. It consumes Webit and Opensea for the NFT, Coinranking for crypto and Bing for news, all of which came from RapidAPI. The charting tool used is provided by Tradingview.",
-    link: "https://neublock.netlify.app/",
+    link: "https://neublock.vercel.app/",
     github: "https://github.com/",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
@@ -26,7 +26,7 @@ const images = [
     title: "Find This IP",
     subtitle:
       "Find this IP website is an IP-tracker that shows you the location, timezone, and the internet service provider of the IP Address that you would like to search using the API provided by IPAPI.co. The location will then be shown in the map below using the API provided by LEAFLET and the tiles layer is provided by OpenStreetMap. ",
-    link: "https://find-this-ip.netlify.app/",
+    link: "https://find-this-ip.vercel.app/",
     github: "https://github.com/",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
@@ -40,7 +40,7 @@ const images = [
     title: "FinchPro",
     subtitle:
       "FinchPro is an admin dashboard react app that utilizes some of the great components created by Syncfusion. With the use of useContext, the dashboard has the capability to change the theme, current color, and reacts to the change of the screen size to automatically hide the sidebar that is visible by default.",
-    link: "https://finch-dashboard.netlify.app/",
+    link: "https://finch-dashboard.vercel.app/",
     github: "https://github.com/",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
@@ -67,7 +67,7 @@ const images = [
     title: "Socially",
     subtitle:
       "Socially is a mock-up social media website that applies Material-UI, a library of React components that offers a comprehensive suite of UI tools which helped a lot in realizing this project. It is really a powerful tool and very enjoyable to use, it's no question that this easily became my favorite UI library yet. One doesn't need to be a designer to implement a visually stunning website.",
-    link: "https://socially-finch.netlify.app/",
+    link: "https://socially-finch.vercel.app/",
     github: "https://github.com/",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },
@@ -81,7 +81,7 @@ const images = [
     title: "Portfolio",
     subtitle:
       "This website is a showcase portfolio that exhibits my web development skills in using React. For this project, I used Gatsby and applied Javascript animations for the interactions using Greensock(GSAP) and Framer Motion. As for my CSS styling, I used Sass and to achieve a more professional-looking portfolio website, I also applied Locomotive-Scroll and Smooth-Scroll.",
-    link: "https://jul-lactao.netlify.app/",
+    link: "https://jul-lactao.vercel.app/",
     github: "https://github.com/",
     stack: [
       { icon: <SiReact  size={24} />, icon_name: "React" },

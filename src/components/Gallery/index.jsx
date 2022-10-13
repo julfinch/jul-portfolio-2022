@@ -18,19 +18,19 @@ const images = [
   {
     src: image1,
     title: "Find This IP",
-    link: "https://find-this-ip.netlify.app/",
+    link: "https://find-this-ip.vercel.app/",
     github: "https://github.com/",
   },
   {
     src: image2,
     title: "FinchPro",
-    link: "https://finch-dashboard.netlify.app/",
+    link: "https://finch-dashboard.vercel.app/",
     github: "https://github.com/",
   },
   {
     src: image3,
     title: "Socially",
-    link: "https://socially-finch.netlify.app/",
+    link: "https://socially-finch.vercel.app/",
     github: "https://github.com/",
   },
 ];
