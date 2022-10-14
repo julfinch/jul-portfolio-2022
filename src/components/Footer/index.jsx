@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
         <div className="contacts-info">
             <div className="socials">
-              <h3 className="socials-link"><Link to="https://www.linkedin.com/in/jul-danreb-lactao-b5b27027" target="_blank" rel="noopener noreferrer" >LINKEDIN</Link></h3>
+              <h3 className="socials-link"><Link to="https://www.linkedin.com/in/jul-lactao" target="_blank" rel="noopener noreferrer" >LINKEDIN</Link></h3>
               <h3 className="socials-link"><Link to="https://github.com/julfinch" target="_blank" rel="noopener noreferrer" >github</Link></h3>
             </div>
             <h3 className="copyright">© 2022</h3>
