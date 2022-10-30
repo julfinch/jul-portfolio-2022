@@ -84,8 +84,8 @@ const Home = () => {
 
   return (
     <>
-      {/* CurstomCursor visible only when window greater than 600px */}
-      {width > 600 && <CustomCursor/>}
+      {/* CurstomCursor visible only when window greater than 1100px */}
+      {width > 1100 && <CustomCursor/>}
       {preloader ? (
         <div className="loader-wrapper absolute">
           <p className="loader-bg marquee1">Kumusta Ciao Hola Hi</p>
@@ -106,7 +106,7 @@ const Home = () => {
         >
           <Header/>
           <About />
-          {width > 1024 ? <Gallery/> : <GalleryMobile/>}
+          {width > 1100 ? <Gallery/> : <GalleryMobile/>}
           <ViewSection/>
           <Featured/>
           <Footer/>

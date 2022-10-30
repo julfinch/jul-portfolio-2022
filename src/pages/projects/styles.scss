@@ -487,7 +487,7 @@ h2 {
   }
   @include media(">=1024px", "<desktop") {
     h2{
-      font-size: 8rem;
+      font-size: 11rem;
     }
     .projects-hero{
       .projects-hero{
@@ -500,7 +500,7 @@ h2 {
           height: 50%;
         }
         &__arrow{
-          height: 48%;
+          height: 37%;
         }
         &__image1 {
           width: 300px;
@@ -542,6 +542,23 @@ h2 {
     }
     .projects-item-info{
       padding: 0 12vw;
+      .projects-info-subtitle {
+        font-family: "Poppins";
+        font-weight: 300;
+        font-size: 1rem;
+        text-indent: 70px;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .projects-info-stack {
+        margin-top: 10px;
+        .projects-info-icon {
+          margin: 3px 20px 0 0;
+        }
+      }
     }
   }
 }
