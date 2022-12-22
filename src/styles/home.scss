@@ -735,7 +735,7 @@ body {
     .view-section{
       .section-2{
         h1{
-          font-size: 10vw;
+          font-size: 7vw;
         }
       }
       .section-2-button{
@@ -755,6 +755,7 @@ body {
       .section-5{
         h2{
           margin: 20px 0px 10px;
+          font-size: 5rem;
         }
         span{
           margin-bottom: 20px;
@@ -764,7 +765,7 @@ body {
             .stack-image{
               img {
                 width: 170px;
-                height: 130px;
+                height: 110px;
               }
             }
           }
@@ -774,16 +775,16 @@ body {
     /*FOOTER*/
     .footer{
       .contacts{
-        margin-top: 120px;
+        margin-top: 50px;
         .title-1, .title-2{
-          font-size: 12vw;
+          font-size: 8.6vw;
         }
         .button-wrapper{
           height: 80px;
         }
       }
       .contacts-info{
-        margin-top: 70px;
+        margin-top: 50px;
       }
     }
   }
@@ -847,7 +848,7 @@ body {
       .contacts{
         margin-top: 50px;
         .title-1, .title-2{
-          font-size: 8vw;
+          font-size: 8.5vw;
         }
         .button-wrapper{
           height: 80px;
