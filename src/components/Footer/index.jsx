@@ -94,7 +94,10 @@ export default function Footer() {
               <h3 className="socials-link"><Link to="https://www.linkedin.com/in/jul-lactao" target="_blank" rel="noopener noreferrer" >LINKEDIN</Link></h3>
               <h3 className="socials-link"><Link to="https://github.com/julfinch" target="_blank" rel="noopener noreferrer" >github</Link></h3>
             </div>
-            <h3 className="copyright">© 2022</h3>
+            <div className="socials">
+              <h3 className="socials-link"><Link to="/projects" target="_blank" rel="noopener noreferrer" >projects</Link></h3>
+              <h3 className="copyright">© 2022</h3>
+            </div>
         </div>
         <div className="footer-bar"></div>
     </section>
