@@ -788,7 +788,7 @@ body {
     }
   }
 
-  @include media(">=desktop") {
+  @include media(">=desktop", "<LGdesktop") {
         /*GALLERY*/
         .gallery {
           .gallery-item-image {
@@ -797,14 +797,14 @@ body {
             // height: 91%;
             max-width: 100%;
             // height: auto;
-            aspect-ratio: 19.3 / 9;
+            aspect-ratio: 18 / 9.9;
           }
         }
             /*VIEW SECTION*/
     .view-section{
       .section-2{
         h1{
-          font-size: 9vw;
+          font-size: 7vw;
         }
       }
       .section-2-button{
@@ -819,20 +819,42 @@ body {
         }
       }
     }
+        /*TECH STACK*/
+    .featured-section{
+      .section-5{
+        h2{
+          margin: 9px 0px 10px;
+          font-size: 6rem;
+        }
+        span{
+          margin-bottom: 20px;
+        }
+        .stack-container{
+          .stack{
+            .stack-image{
+              img {
+                width: 170px;
+                height: 110px;
+              }
+            }
+          }
+        }
+      }
+    }
     /*FOOTER*/
     .footer{
       // max-height: 91vh;
       .contacts{
-        margin-top: 70px;
+        margin-top: 50px;
         .title-1, .title-2{
-          font-size: 10vw;
+          font-size: 8vw;
         }
         .button-wrapper{
           height: 80px;
         }
       }
       .contacts-info{
-        margin-top: 60px;
+        margin-top: 50px;
       }
     }
   }
